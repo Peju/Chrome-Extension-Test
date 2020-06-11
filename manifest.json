@@ -1,0 +1,22 @@
+  {
+    "manifest_version": 2,
+    "name": "Gesture",
+    "version": "1.0.0",
+    "description": "Never forget to send a Gesture!",
+    "icons": {"128": "gestureLogo.png"},
+
+    "content_scripts": [
+    {
+    "matches": ["https://www.yourgesture.com/*"],
+    "css": ["main.css"]
+    }
+    ],
+
+    //"http://www.yourgesture.com"
+    "page_action":{
+      "default_icon": "gestureLogo.png",
+      "default_popup": "popup.html",
+      "default_title": "My first chrome extension"
+    },
+    "manifest_version": 2
+  }
